@@ -37,7 +37,11 @@ SOURCES =   so_long.c \
 		read_map.c \
    		floodfill.c \
 		clean_fcts.c \
-		usedfcts.c  
+		usedfcts.c  \
+		read_img.c \
+		map_print.c \
+		map_exit.c \
+		zahira.c
 
 OBJECTS = $(SOURCES:.c=.o)
 

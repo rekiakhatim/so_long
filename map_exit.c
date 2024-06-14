@@ -1,38 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clean_fcts.c                                       :+:      :+:    :+:   */
+/*   map_exit.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkhatim <rkhatim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/29 21:22:07 by rkhatim           #+#    #+#             */
-/*   Updated: 2024/06/13 02:00:11 by rkhatim          ###   ########.fr       */
+/*   Created: 2024/06/13 01:38:28 by rkhatim           #+#    #+#             */
+/*   Updated: 2024/06/13 01:40:30 by rkhatim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
-// void	clean_mlx(t_long *data)
-// {
-// 	mlx_destroy_display(data->mlx);
-// 	cleanup_data(data);
-// 	free(data->mlx);
-// }
-
-void	free_array(t_long *data)
+void import_imgs(t_long *data)
 {
-	int	i;
-
-	i = 0;
-	while (i < data->map_y)
-	{
-		free(data->pin[i]);
-		i++;
-	}
-	free(data->pin);
+    import_img(data);
+    import_img0(data);
+    import_img1(data);
 }
-
-// void	clean_img()
-// {
-	
-// }

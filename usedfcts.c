@@ -6,7 +6,7 @@
 /*   By: rkhatim <rkhatim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:26:21 by rkhatim           #+#    #+#             */
-/*   Updated: 2024/06/10 10:39:43 by rkhatim          ###   ########.fr       */
+/*   Updated: 2024/06/12 18:18:11 by rkhatim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void	player_cordinations(t_long *data)
 // 		ft_printf("\n");
 // 		i++;
 // 	}
-// }
 
 // void	player_coin(t_long *data, int x, int y)
 // {

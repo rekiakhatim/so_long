@@ -37,6 +37,7 @@ typedef struct s_long
     char **map;
 
     void *mlx;
+    void *window;
     int **pin;
 
     int g_collect;
@@ -51,13 +52,20 @@ typedef struct s_long
     int player_x;
     int player_y;
 
+    void *ember;
+    void *wood;
+    void *wall;
+    void *doorw;
+    void *doorf;
+    void *floor;
+
 }       t_long;
 
 
 // window
 void		initializing_map(t_long *data, int ac, char **av);
 void		calculate_map_dimensions(t_long *data);
-//void		setup_window(t_long *data);
+void		set_window(t_long *data);
 
 
 
@@ -82,6 +90,19 @@ void    read_map(t_long *data, char **argv);
 size_t  ft_strlen(const char *str);
 int	    ft_strncmp(const char *s1, const char *s2, size_t n);
 
+
+
+//prnt imgs
+void    import_img(t_long *data);
+void    import_img0(t_long *data);
+void    import_img1(t_long *data);
+void    import_imgs(t_long *data);
+void    print_images(t_long *data);
+void    free_imgs(t_long *data);
+void    init_variables(t_long *data);
+void    print_images_game(t_long *data, int i,int j);
+
+
 //usedfncts
 
 void	player_cordinations(t_long *data);
@@ -90,7 +111,9 @@ int     fill_array(t_long *data);
 
 //cleaning 
 void    free_array(t_long *data);
+void mlx_img(t_long *data);
 //void    clean_mlx(t_long *data);
+
 #endif
 
 

@@ -6,7 +6,7 @@
 /*   By: rkhatim <rkhatim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 10:35:40 by rkhatim           #+#    #+#             */
-/*   Updated: 2024/06/10 21:14:22 by rkhatim          ###   ########.fr       */
+/*   Updated: 2024/06/14 02:03:57 by rkhatim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,42 @@ void	calculate_map_dimensions(t_long *data)
 	data->map_x = data->map_w;
 	data->map_h *= 58;
 	data->map_w *= 58;
+}
+void    set_window(t_long *data)
+{
+    data->window = mlx_new_window(data->mlx,data->map_w,
+          data-> map_h , "welcome to yuki's game ");
+   print_images(data);
+// int i;
+// int j;
+//  i = 0;
+//  j = 0;
+//     mlx_img(data);
+//     printf("--->%d\n",data->map_y);
+//     while(i < 4)
+//     {
+//        printf("-->%s",data->map[i]);
+//        i++;
+//     }
+    // while(data->map[i])
+    // {
+    //     j = 0;
+    //     while(data->map[i][j])
+    //     {
+            
+    //         if(data->map[i][j] == '1')
+    //         {
+    //             // printf("--> %d\n",data->map_h);
+    //             // exit(1);
+    //             mlx_put_image_to_window(data->mlx,data->window,data->wall,i*58,j*58);
+    //         }
+    //         j++;
+            
+    //     }
+    //     i++;
+    // }
+   
+    
 }
 
 
