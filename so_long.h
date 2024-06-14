@@ -97,6 +97,7 @@ void    import_img(t_long *data);
 void    import_img0(t_long *data);
 void    import_img1(t_long *data);
 void    import_imgs(t_long *data);
+void    mlx_img(t_long *data);
 void    print_images(t_long *data);
 void    free_imgs(t_long *data);
 void    init_variables(t_long *data);
@@ -111,7 +112,7 @@ int     fill_array(t_long *data);
 
 //cleaning 
 void    free_array(t_long *data);
-void mlx_img(t_long *data);
+//void    mlx_img(t_long *data);
 //void    clean_mlx(t_long *data);
 
 #endif

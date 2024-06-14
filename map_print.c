@@ -6,7 +6,7 @@
 /*   By: rkhatim <rkhatim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 21:17:58 by rkhatim           #+#    #+#             */
-/*   Updated: 2024/06/14 02:06:51 by rkhatim          ###   ########.fr       */
+/*   Updated: 2024/06/14 03:57:31 by rkhatim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	print_images(t_long *data)
 	int	j;
 
 	
-	// import_imgs(data);
+	//import_imgs(data);
 	mlx_img(data);
 	
 	i = 0;
@@ -56,7 +56,7 @@ void	print_images(t_long *data)
 		j = 0;
 		while (data->map[i][j] != '\n' && data->map[i][j] != '\0'  )
 		{
-			// printf("imane\n");
+			
 			print_images_game(data, i, j);
 			j++;
 		}
